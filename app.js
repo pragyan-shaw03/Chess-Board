@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         newCell.className = 'cell';
         newCell.id = i;
+
         if (i >= 0 && i <= 15) {
             newCell.style.color = 'black';
             if (i < 8) newCell.innerHTML = icons[count++];
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             newCell.classList.add('greenyellow');
             if (i == 0 || i%8 != 7) color = 1;
         }
+
         container.appendChild(newCell);
     }
 })
