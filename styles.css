@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+}
+.cell {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cell i {
+    text-shadow: 2px 2px 30px black;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(8, 80px);
+    grid-template-rows: repeat(8, 80px);
+    box-shadow: 2px 2px 20px black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.green {
+    background-color: rgb(20, 181, 20);
+}
+.greenyellow {
+    background-color: rgba(172, 255, 47, 0.851);
+}
