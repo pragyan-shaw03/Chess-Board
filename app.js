@@ -4,7 +4,7 @@ let count = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
     let cell = document.querySelector('.cell');
-    let color = 1;
+    let color = 0;
     let number = 64;
     for (let i = 0; i < number; i++) {
         let newCell = document.createElement('div');
@@ -19,7 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
         } else if (i >= 48){
             newCell.style.color = 'white';
             if (i < 56) newCell.innerHTML = icons[count];
-            else newCell.innerHTML = icons[--count];
+            else {
+            	if (i == 56) count = 0;
+            	newCell.innerHTML = icons[count++];
+            }
         }
 
         if (color == 1) {
